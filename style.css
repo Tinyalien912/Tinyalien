@@ -1,0 +1,32 @@
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf6;
+    color: #333;
+}
+header {
+    background-color: #f5f0ea;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #5c4d7d;
+}
+.hero-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+section {
+    padding: 40px 20px;
+}
+footer {
+    background-color: #e8e4db;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
