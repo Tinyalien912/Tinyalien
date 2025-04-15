@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const bear = document.createElement("img");
-    bear.src = "bear.png";
+    bear.src = "bear.png.png";
     bear.alt = "熊熊先生";
     bear.style.position = "fixed";
     bear.style.width = "120px";
