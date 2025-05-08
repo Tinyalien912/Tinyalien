@@ -54,6 +54,14 @@ nav a span.hover-word:hover::after {
     line-height: 1.8;
 }
 
+/* ✅ 新增：文章專用區塊 */
+.articles-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    font-family: "Segoe UI", "微軟正黑體", sans-serif;
+    line-height: 1.8;
+}
 footer {
     background-color: #e7e3dc;
     text-align: center;
