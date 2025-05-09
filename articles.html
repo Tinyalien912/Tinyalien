@@ -2,32 +2,86 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <title>articles - 小外星人駐地日記</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>文章專區</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    .sidebar {
+      width: 250px;
+      margin-right: 40px;
+    }
+    .sidebar h3 {
+      margin-bottom: 10px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+    .card-list {
+      flex-grow: 1;
+    }
+    .article-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 20px 25px;
+    }
+    .article-card h4 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    .article-card p {
+      color: #444;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
 <header class="curved">
-    <h1><a href="index.html" style="text-decoration: none; color: inherit;">小外星人駐地日記</a></h1>
-    <p>心理師與地球的通信基地，在宇宙的寂靜裡記錄每一則曠世訊號</p>
-    <nav>
-        <a href="about.html"><span class="hover-word" data-hover="About Me">🌙</span> 自我介紹</a>
-        <a href="articles.html"><span class="hover-word" data-hover="Articles">🪐</span> 文章專區</a>
-        <a href="services.html"><span class="hover-word" data-hover="Services">🛸</span> 服務項目與實績</a>
-        <a href="contact.html"><span class="hover-word" data-hover="Contact">📬</span> 預約諮詢</a>
-        <a href="responses.html"><span class="hover-word" data-hover="Responses">🌟</span> 讀者回應</a>
-        <a href="tests.html"><span class="hover-word" data-hover="Tests">🧠</span> 心理健康檢測站</a>
-    </nav>
+  <h1><a href="index.html" style="text-decoration: none; color: inherit;">小外星人心理師駐地日記</a></h1>
+  <p>心理師與地球的通信基地，在宇宙的寂靜裡記錄每一則曠世訊號</p>
+  <nav>
+    <a href="about.html"><span class="hover-word" data-hover="About Me">🌙</span> 自我介紹</a>
+    <a href="articles.html"><span class="hover-word" data-hover="Articles">🪐</span> 文章專區</a>
+    <a href="services.html"><span class="hover-word" data-hover="Services">🛸</span> 服務項目與實績</a>
+    <a href="contact.html"><span class="hover-word" data-hover="Contact">📬</span> 預約諮詢</a>
+    <a href="responses.html"><span class="hover-word" data-hover="Responses">🌟</span> 讀者回應</a>
+    <a href="tests.html"><span class="hover-word" data-hover="Tests">🧠</span> 心理健康檢測站</a>
+  </nav>
 </header>
-<section class="page-section">
-<h2>文章專區</h2><p>請從左側導覽選擇分類以閱讀文章。</p>
-    <h2>地球觀察報告─心理紅燈站</h2>
-<ul>
-  <li><a href="bipolar_parenting.html">我的孩子有躁鬱症，他說我要殺他─病患家屬的曲折路</a></li>
-  <li><a href="fire_in_relationship.html">關係裡的小事為什麼會變成大火？</a></li>
-</section>
+
+<div class="container">
+  <div class="sidebar">
+    <h3>分類列表</h3>
+    <ul>
+      <li><a href="#">地球觀察報告─親密關係</a></li>
+      <li><a href="#">地球觀察報告─心理紅燈站</a></li>
+    </ul>
+  </div>
+  <div class="card-list">
+    <div class="article-card">
+      <h4><a href="articles/fire_in_relationship.html">關係裡的小事為什麼會變成大火？</a></h4>
+      <p>有時候，不開心的事情來得比預期還快。明明只是叫另一半起床，卻變成一場不太愉快的冷戰，彼此都覺得委屈……</p>
+    </div>
+    <div class="article-card">
+      <h4><a href="articles/bipolar_parenting.html">我的孩子有躁鬱症，他說我要殺他─病患家屬的曲折路</a></h4>
+      <p>當孩子說「你要殺我」時，我其實只是站在房門口等他把門打開，這是一段難以想像的照護歷程……</p>
+    </div>
+  </div>
+</div>
+
 <footer>
-    <p>© 小外星人駐地日記</p>
+  <p>© 小外星人心理師駐地日記</p>
 </footer>
 <script src="bear.js"></script>
 </body>
